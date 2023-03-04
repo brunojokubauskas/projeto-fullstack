@@ -1,0 +1,68 @@
+/* CSS para Dark Mode */
+
+body {
+  background-color: #1a1a1a;
+  color: #f2f2f2;
+}
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: top 0.3s;
+}
+
+#navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+#navbar li a {
+  display: block;
+  color: white;
+  padding: 20px 20px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+#navbar li a:hover {
+  background-color: #111;
+}
+
+/* Animacao da navbar */
+
+#navbar.animate {
+  top: -100px;
+}
+
+#navbar.animate + main {
+  margin-top: 100px;
+}
+
+/* Estilo da main */
+
+main {
+  margin-top: 100px;
+  padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th, table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #555;
+  color: white;
+}
